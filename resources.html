@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html>
+<head> 
+<link rel="stylesheet" type="text/css" herf="stylesheet.css">
+<title>iOasisLife</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-teal.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<style>
+
+ul {
+
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    background-color: #333;
+	
+}
+
+li {
+
+    float: left;
+
+}
+
+li a, .dropbtn {
+
+    display: inline-block;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 14px 16px;
+
+    text-decoration: none;
+
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+
+    background-color: white;
+
+}
+
+li.dropdown {
+
+    display: inline-block;
+
+}
+
+.dropdown-content {
+
+    display: none;
+
+    position: relative;
+
+    background-color: #f9f9f9;
+
+    min-width: 160px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-content a {
+
+    color: black;
+
+    padding: 12px 16px;
+
+    text-decoration: none;
+
+    display: block;
+
+    text-align: left;
+
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+
+
+.show {display:block;}
+
+
+
+
+</style>
+<style>
+
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+
+.w3-navbar a{padding-top:12px !important;padding-bottom:12px !important;}
+
+</style>
+
+<body background="wood1.png">
+
+
+<!-- Navbar -->
+
+<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;" >
+
+  <li class="w3-opennav w3-right w3-hide-large">
+
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+
+  </li>
+
+  <img src="ioasis.png" align="left" width="75px">
+
+  <li class="w3-hide-small"><a href="C:\Users\students\Desktop\final project\oasislife.html" class="w3-hover-white">Home</a></li>
+
+  <li class="w3-hide-small"><a href="http://ioasislife.boards.net/" class="w3-hover-white">Forum</a></li>
+  
+   <li class="w3-hide-small"><a href="resources.html" class="w3-hover-white">Resources</a></li>
+	<li class="dropdown">
+
+		<a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Help</a> 
+
+		<div class="dropdown-content" id="myDropdown">
+
+			<a href="oasishelp0.html">Breathing Exercises</a>
+
+			<a href="oasishelp1.0.html">Printable Coloring Stress Relievers</a>
+
+			<a href="oasishelp2.0.html">Tips</a>
+
+		</div>
+
+	</li>
+
+</ul>
+
+<!-- Sidenav -->
+
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:51px;" id="mySidenav">
+
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">
+
+    <i class="fa fa-remove"></i>
+
+  </a>
+
+  <h3><b>Contact Us</b></h3>
+  
+   <a href="#" class="w3-hover-white">iOasisLife</a>
+	<center>
+		<p>ioasislife@gmail.com</p>
+	</center>
+
+  <a href="#" class="w3-hover-white">Katie Gutierrez</a>
+	<center>
+		<p>k4.gutierrez@gmail.com</p>
+	</center>
+  <a href="#" class="w3-hover-white">Evelyn Torres</a>
+  <center>
+		<p>evelyntorres2798@gmail.com</p>
+	</center>
+  <a href="#" class="w3-hover-white">Sajara Magdaleno</a>
+  <center>
+  <p> sajara.magdaleno@gmail.com</p>
+	</center>
+  <a href="#" class="w3-hover-white">Thailyn Gonzalez</a>
+   <center>
+		<p>tgon.516@gmail.com</p>
+	</center>
+</nav>
+
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- Overlay effect when opening sidenav on small screens -->
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+
+<div class="w3-main" style="margin-left:250px">
+
+
+  <div class="w3-row w3-padding-64">
+
+    <div class="w3-twothird w3-container">
+	
+
+
+<h1><font color="teal">Resources</font></h1>  
+<h4><li><b>National Suicide Prevention Lifeline</b> Phone Number
+1-800-273-8255</li>
+
+
+<li><b>General Crisis Support</b> by Text
+
+Crisis Text Line: Text SUPPORT to<font color="darkslateblue"> 741-741 (24/7)</font></li>
+
+
+<li><b>Depression & Suicide</b>
+
+The Trevor Project Call <font color="darkslateblue"> 866-488-7386 (24/7)</font></li>
+
+
+<li><b>Dating Abuse & Domestic Violence</b>
+
+loveisrespect Call <font color="darkslateblue">1-866-331-9474 (24/7)</font></li>
+
+<li><b>National Domestic Violence Hotline</b> Call<font color="darkslateblue"> 1-800-799-7233 (24/7)</font> Email the National Domestic Violence Hotline (24/7)</li>
+
+<li><b>RAINN: Rape, Abuse and Incest National Network</b> Call<font color="darkslateblue"> 1-800-656-4673 (24/7)</font></li>
+
+
+<li>Child Abuse</li>
+
+<li><b>Childhelp National Child Abuse Hotline Call</b><font color="darkslateblue"> 1-800-422-4453 (24/7)</font></li>
+
+<li><b>National Safe Place</b> Text SAFE and your current location to the number 69866 (24/7)<li>
+
+<li><b>Runaways, Homeless, and At-Risk Youth</b></li>
+
+<li><b>National Runaway Safeline</b> Call <font color="darkslateblue">1-800-786-2929 (24/7)</font> Live Chat 7 days/week, 4:30 to 11:30 PM CST</li>
+
+
+<li><b>National Mental Health Association Hotline</b>
+
+<font color="darkslateblue">800-273-TALK </font>(8255)
+
+Twenty-four hours a day, seven days a week</li></h4>
+
+    
+  </div>
+  </div>
+  <div class="w3-row">
+
+    <div class="w3-twothird w3-container">
+
+    </div>
+
+ </div>
+
+
+  <footer id="myFooter">
+
+
+
+    <div class="w3-container w3-theme-l1">
+
+      <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+    </div>
+
+  </footer>
+
+
+<!-- END MAIN -->
+</div>
+<script>
+
+// Get the Sidenav
+
+var mySidenav = document.getElementById("mySidenav");
+
+
+// Get the DIV with overlay effect
+
+var overlayBg = document.getElementById("myOverlay");
+
+
+// Toggle between showing and hiding the sidenav, and add overlay effect
+
+function w3_open() {
+
+    if (mySidenav.style.display === 'block') {
+
+        mySidenav.style.display = 'none';
+
+        overlayBg.style.display = "none";
+
+    } else {
+
+        mySidenav.style.display = 'block';
+
+        overlayBg.style.display = "block";
+
+    }
+
+}
+
+
+// Close the sidenav with the close button
+
+function w3_close() {
+
+    mySidenav.style.display = "none";
+
+    overlayBg.style.display = "none";
+
+}
+
+</script>
+<script>
+
+/* When the user clicks on the button,
+
+toggle between hiding and showing the dropdown content */
+
+function myFunction() {
+
+    document.getElementById("myDropdown").classList.toggle("show");
+
+}
+
+
+
+
+// Close the dropdown if the user clicks outside of it
+
+window.onclick = function(e) {
+
+  if (!e.target.matches('.dropbtn')) {
+
+
+
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+
+    for (var d = 0; d < dropdowns.length; d++) {
+
+      var openDropdown = dropdowns[d];
+
+      if (openDropdown.classList.contains('show')) {
+
+        openDropdown.classList.remove('show');
+
+      }
+
+    }
+
+  }
+
+}
+
+</script>
+
+</body>
+
+</html>

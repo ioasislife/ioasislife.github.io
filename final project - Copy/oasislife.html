@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html>
+<head> 
+<link rel="stylesheet" type="text/css" herf="stylesheet.css">
+<title>iOasisLife</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-teal.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+.show {display:block;}
+
+</style>
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+.w3-navbar a{padding-top:12px !important;padding-bottom:12px !important;}
+
+#navigation
+{
+display: inline-block;
+vertical-align: middle;
+float: right;
+}
+
+</style>
+
+
+
+
+ 
+
+		
+	</head>
+
+<body background="wood1.png">
+
+<!-- Navbar -->
+
+<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;" >
+  <li class="w3-opennav w3-right w3-hide-large">
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </li>
+  <img src="ioasis.png" align="left" width="75px">
+  <li class="w3-hide-small"><a href="C:\Users\students\Desktop\final project\oasislife.html" class="w3-hover-white">Home</a></li>
+  <li class="w3-hide-small"><a href="http://ioasislife.boards.net/" class="w3-hover-white">Forum</a></li>
+   <li class="w3-hide-small"><a href="resources.html" class="w3-hover-white">Resources</a></li>
+  
+	<li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn" onclick="myFunction()" class="w3-hover-white">Help</a> 
+		<div class="dropdown-content" id="myDropdown">
+			<a href="oasishelp0.html">Breathing Exercises</a>
+			<a href="oasishelp1.0.html">Printable Coloring Stress Relievers</a>
+			<a href="oasishelp2.0.html">Tips</a>
+		</div>
+
+	</li>
+</ul>
+</ul>
+
+<!-- Sidenav -->
+
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:51px;" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">
+    <i class="fa fa-remove"></i>
+  </a>
+
+  <h3><b>Contact Us</b></h3>
+   <a href="#" class="w3-hover-teal">iOasisLife</a>
+	<center>
+		<p>ioasislife@gmail.com</p> </center>
+
+  <a href="#" class="w3-hover-white">Katie Gutierrez</a>
+	<center>
+		<p>k4.gutierrez@gmail.com</p> </center>
+  <a href="#" class="w3-hover-white">Evelyn Torres</a>
+  <center>
+		<p>evelyntorres2798@gmail.com</p> </center>
+  <a href="#" class="w3-hover-white">Sajara Magdaleno</a>
+  <center>
+  <p> sajara.magdaleno@gmail.com</p> </center>
+  <a href="#" class="w3-hover-white">Thailyn Gonzalez</a> <center>
+		<p>tgon.516@gmail.com</p> </center>
+</nav>
+
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+<head>
+<meta charset= "utf-8">
+
+	<meta name= "viewport" content= "width=device-width, initial-scale">
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<style>
+	
+
+	.carousel-inner > .item > img,
+
+	.carousel-inner > .item > a > img {
+
+		width: 20%;
+
+		margin: auto;
+
+	}
+	</style>
+	</head>
+<body>
+
+		<div class="container">
+		
+		<br>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+
+    <ol class="carousel-indicators">
+
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+
+    </ol>
+
+    <!-- Wrapper for slides -->
+
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+
+        <img src="katie.jpg" alt="Katie" width="200" height="100">
+
+      </div>
+
+      <div class="item">
+
+        <img src="evv.jpg" alt="Evelyn" width="200" height="100">
+
+      </div>
+
+      <div class="item">
+
+        <img src="thai.jpg" alt="Thai" width="200" height="100">
+
+      </div>
+
+      <div class="item">
+
+        <img src="sajara2.jpg" alt="Sajara" width="200" height="100">
+
+      </div>
+
+  
+
+
+
+    <!--  and right controls -->
+
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+      <span class="sr-only">Previous</span>
+
+    </a>Left
+
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+      <span class="sr-only">Next</span>
+
+    </a>
+
+  </div>
+
+		</div>
+
+		</head>
+
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">About OasisLife</h1>
+     <h4> <p>Welcome to OasisLife! 
+	  This website is designed to help people find peace and control in their lives. 
+	  We don't want this site to only be a get help site, we want people to able to talk about their struggles in their life and find people who have or going through the same thing as them. 
+	  We want to let you guys know that you're not alone and there will always be people on OasisLife to help you through the tough times.
+	  This is a safe place and you guys can be you true selves here. 
+	  You don't need to always talk about your struggles, you can talk about anything you're  interested in.  :)</p></h4>
+    </div>
+  </div>
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">About Us</h1>
+      <h3>Katelyn Gutierrez</h3>
+	 <h4> <p>Hi I'm Katelyn but i go by katie.   
+		I am 17 years old who lives in Illinois.
+		I am currently in a program called Girls Who Code and we learned many different programing langueages and ley me tell you this I fell in love with this summer program it has been an amazing experience.
+		Me personally I decided to do this webaite with my teammates because I've personally have dealt with anxiety, depression, panic attacks(which are just terrible).
+		I wanted to creat a website people can come here and just feel safe, connect with others who are struggling with the same problems and ontop of that this a space where I want everyone to feel safe & free to be themselves.
+		</p></h4>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center"><img src="kg2.jpg" height="350" width="200"</p>
+    </div>
+  </div>
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h3>Evelyn Torres</h3>
+     <h4> <p>I'm Evelyn! You guys can call me Ev or Evie or just Evelyn. 
+		I'm 17 going on 18 this October. I'm from Illinois. 
+		I run cross country and track and I'm a JROTC head (that's all I ever talk about, and for those of you who don't know, JROTC is Junior Reserve Officer Training Corps.)
+		I love talking, so I am extremely glad to be here to talk to all of you guys! I have personally never experienced anxiety or depression, but I have friends who have faced it.
+		My friends know that they can talk to me about anything because I'm not one to judge, but rather a person who will try their best to help anyone out when they need someone to talk to.
+		So, I hope you all visiting our page will feel free to contact any of us at any time when you need to talk.</p></h4>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center"><img src="et.png" height="320" width="240"></p>  
+    </div>
+  </div>
+ <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h3>Sajara Magdaleno</h3>
+    <h4><p>I am a 16 year old who lives in Illinois. 
+		I am currently in a program called Girls Who Code and we learned how to code with many different programming languages.
+		My group and I decided to make this website ourselves because we thought it would be nice to see people be able to talk about their feelings.
+		I do have family members who have anxiety and it's hard to see them struggle with it because they have no one they can talk to/ no one there to understand what they are going through. 
+		I hear my parents talking about my cousin (who has anxiety) sometimes, and my parents say that my cousin is overthinking things and that he needs to relax. 
+		I don't think that what they say that he should do will help him because he has tried to 'relax' before, but that doesn't work. 
+		I feel like this website can help people, like my cousin, find some peace. 
+		I also think that this website can teach people, like my parents, things about mental health.</p></h4>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center"><img src="sm.png" height="250"></p>  
+    </div>
+  </div>  
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h3> Thailyn Gonzalez</h3>
+     <h4> <p>I'm Thailyn Gonzalez, I usually just go by Thai.
+		I'm 16 years old who lives in Illinois.
+		Being in High School there are a lot of stress going on, stress over big tests, extra curriculums, friend drama, relationship drama, etc.
+		I read an article on 15minutes4me.com about stress' affect on teenagers. 
+		They had conducted a study on 4300 stressed out teens, and 61% could handle the stress effectively, the other 39% were diagnosed with depression ranging from mild to severe.
+		And in that 31%, 6% had attempted suicide. 
+		If I have the capability to create something that can help even a couple people from this, why wouldn't I?</p></h4>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center"><img src="tg.png" width="250" height="350"></p>  
+    </div>
+  </div>
+  </div>
+  
+   <div class="w3-row">
+    <div class="w3-twothird w3-container">
+    </div>
+ </div>
+<footer id="myFooter">
+    <div class="w3-container w3-theme-l1">
+	<div align="right">
+	<p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+	</div> 
+  </footer>
+
+
+<!-- END MAIN -->
+
+</div>
+
+
+<script>
+
+// Get the Sidenav
+
+var mySidenav = document.getElementById("mySidenav");
+
+
+// Get the DIV with overlay effect
+
+var overlayBg = document.getElementById("myOverlay");
+
+
+// Toggle between showing and hiding the sidenav, and add overlay effect
+
+function w3_open() {
+
+    if (mySidenav.style.display === 'block') {
+
+        mySidenav.style.display = 'none';
+
+        overlayBg.style.display = "none";
+
+    } else {
+
+        mySidenav.style.display = 'block';
+
+        overlayBg.style.display = "block";
+
+    }
+}
+
+
+// Close the sidenav with the close button
+
+}
+
+    mySidenav.style.display = "none";
+
+    overlayBg.style.display = "none";
+
+}
+
+</script>
+<script>
+
+/* When the user clicks on the button,
+
+toggle between hiding and showing the dropdown content */
+
+function myFunction() {
+
+    document.getElementById("myDropdown").classList.toggle("show");
+
+}
+
+
+
+
+// Close the dropdown if the user clicks outside of it
+
+window.onclick = function(e) {
+
+  if (!e.target.matches('.dropbtn')) {
+
+
+
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+
+    for (var d = 0; d < dropdowns.length; d++) {
+
+      var openDropdown = dropdowns[d];
+
+      if (openDropdown.classList.contains('show')) {
+
+        openDropdown.classList.remove('show');
+
+      }
+
+    }
+
+  }
+
+}
+
+</script>
+
+</body>
+
+</html>

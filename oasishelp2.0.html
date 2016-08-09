@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html>
+<head> 
+<link rel="stylesheet" type="text/css" herf="stylesheet.css">
+<title>iOasisLife</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-teal.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<style>
+
+ul {
+
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    background-color: #333;
+	
+}
+
+li {
+
+    float: left;
+
+}
+
+li a, .dropbtn {
+
+    display: inline-block;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 14px 16px;
+
+    text-decoration: none;
+
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+
+    background-color: white;
+
+}
+
+li.dropdown {
+
+    display: inline-block;
+
+}
+
+.dropdown-content {
+
+    display: none;
+
+    position: relative;
+
+    background-color: #f9f9f9;
+
+    min-width: 160px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-content a {
+
+    color: black;
+
+    padding: 12px 16px;
+
+    text-decoration: none;
+
+    display: block;
+
+    text-align: left;
+
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+
+
+.show {display:block;}
+
+
+
+
+</style>
+<style>
+
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+
+.w3-navbar a{padding-top:12px !important;padding-bottom:12px !important;}
+
+</style>
+
+<body background="wood1.png">
+
+
+<!-- Navbar -->
+
+<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;" >
+
+  <li class="w3-opennav w3-right w3-hide-large">
+
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+
+  </li>
+
+  <img src="ioasis.png" align="left" width="75px">
+
+  <li class="w3-hide-small"><a href="C:\Users\students\Desktop\final project\oasislife.html" class="w3-hover-white">Home</a></li>
+
+  <li class="w3-hide-small"><a href="http://ioasislife.boards.net/" class="w3-hover-white">Forum</a></li>
+  
+   <li class="w3-hide-small"><a href="resources.html" class="w3-hover-white">Resources</a></li>
+	<li class="dropdown">
+
+		<a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Help</a> 
+
+		<div class="dropdown-content" id="myDropdown">
+
+			<a href="oasishelp0.html">Breathing Exercises</a>
+
+			<a href="oasishelp1.0.html">Printable Coloring Stress Relievers</a>
+
+			<a href="oasishelp2.0.html">Tips</a>
+
+		</div>
+
+	</li>
+
+</ul>
+
+<!-- Sidenav -->
+
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:51px;" id="mySidenav">
+
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">
+
+    <i class="fa fa-remove"></i>
+
+  </a>
+
+  <h3><b>Contact Us</b></h3>
+  
+   <a href="#" class="w3-hover-white">iOasisLife</a>
+	<center>
+		<p>ioasislife@gmail.com</p>
+	</center>
+
+  <a href="#" class="w3-hover-white">Katie Gutierrez</a>
+	<center>
+		<p>k4.gutierrez@gmail.com</p>
+	</center>
+  <a href="#" class="w3-hover-white">Evelyn Torres</a>
+  <center>
+		<p>evelyntorres2798@gmail.com</p>
+	</center>
+  <a href="#" class="w3-hover-white">Sajara Magdaleno</a>
+  <center>
+  <p> sajara.magdaleno@gmail.com</p>
+	</center>
+  <a href="#" class="w3-hover-white">Thailyn Gonzalez</a>
+   <center>
+		<p>tgon.516@gmail.com</p>
+	</center>
+</nav>
+
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- Overlay effect when opening sidenav on small screens -->
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+
+<div class="w3-main" style="margin-left:250px">
+
+
+  <div class="w3-row w3-padding-64">
+
+    <div class="w3-twothird w3-container">
+	
+
+
+<h1 class="w3-text-teal">Tips</h1>  
+<div class="w3-row w3-padding-64">
+<iframe width="800" height="315" src="https://www.youtube.com/embed/kKcRSboPgU4" frameborder="0" allowfullscreen></iframe>
+<h4 class="w3-text-teal"> Anxiety Tips</h4>
+
+<p>"Tell your fear to someone else and make sure to be as dramatic as possible, with very descriptive words and emotions. 
+Then, when you've told every detail you can think of, start over again. 
+Tell the entire, dramatic story, again with very elaborate descriptions. 
+By the third or fourth time, it becomes a bit silly."</p>
+
+
+<p>Stay away from the self-help books and work on a word puzzle or watch a movie instead, and surround yourself with people as much as possible.</p>
+
+
+<p>Meditate by counting your breaths. 
+Say "one" as you inhale and exhale, and then say "two" with your next breath.
+ It's like swimming laps. </p>
+
+<p> Use visual anchors.</p>
+
+Look up to the clouds. 
+Maybe look at water. Downloaded some "ocean waves" that you can listen to. 
+Look and feel things that make you feel relaxed and comfortable.</p>
+</div>
+<div class="w3-row w3-padding-64">
+<h4 class="w3-text-teal">Bullying Tips</h4>
+
+<p><b>If you are being bullied...</b><br> 
+Reach Out
+<br> Tell an adult. Sometimes you may have to tell more than one trusted adult.
+Ask your friends to help you. There is safety in numbers.<br>
+Practice what to say the next time you're bullied with your parents, teachers or friends.</p>
+
+<p><b>Be Cool in the Moment</b><br> 
+Stay calm and confident. Don't show the bully that you're sad or mad.<br> 
+Ignore the bully and walk away.<br> 
+Remember: Fighting back can make bullying worse.</p>
+<p><b>If you witness bullying...</b><br> 
+Interrupt It <br> 
+Stand next to, or speak up for, the person being bullied.<br> 
+Ask the bully to stop.<br> 
+Comfort the person being bullied and offer friendship.</p>
+<p><b>Get Help</b><br> 
+Walk away and get help.<br> 
+Find an adult who can intervene</p>
+</div>
+<div class="w3-row w3-padding-64">
+
+<h4 class="w3-text-teal">Sexual Harassment</h4>
+
+<p>Sexual harassment can occur in a variety of circumstances, including but not limited to the following:</p>
+
+<li>The victim as well as the harasser may be a woman or a man. The victim does not have to be of the opposite sex.</li>
+
+
+<li>The harasser can be the victim's supervisor, an agent of the employer, a supervisor in another area, a co-worker, or a non-employee.</li>
+
+<li>The victim does not have to be the person harassed but could be anyone affected by the offensive conduct.</li>
+
+<li>Unlawful sexual harassment may occur without economic injury to or discharge of the victim.</li>
+
+
+<li>The harasser's conduct must be unwelcome.</li>
+</div>
+<div class="w3-row w3-padding-64">
+<h4 class="w3-text-teal"> More Anxiety Tips</h4>
+
+<li>Eat healthy, try to stay away from alcohol and caffeine</li>
+
+
+<li>Take some time to yourself, meditate, listen to music, draw, whatever just do you for a bit.</li>
+
+
+<li>Vent about it, it can be to a person or just in a journal.</li>
+
+
+<li>Blow bubbles- Slows down breathing, and gives you something to focus on.</li>
+
+
+<li>Make a To-Do List</li>
+
+
+<li>Go for a walk</li>
+</div>
+<br>
+</br>
+
+<div class="w3-row w3-padding-64">
+<h4 class="w3-text-teal"> Sources</h4>
+	
+<p>
+Borchard, Therese J. "11 Tips to Help Manage Anxiety | World of Psychology." World of Psychology. N.p., 23 Jan. 2011. Web. 08 Aug. 2016. <br>
+</br>
+"Bullying: Tips for Students." Teaching Tolerance. N.p., n.d. Web. 08 Aug. 2016. <br>
+</br>
+"Facts About Sexual Harassment." U.S Equal Employment Opportunity Commission. N.p., n.d. Web. 08 Aug. 2016. <br>
+</br>
+Kylstra, Carolyn. "36 Simple Ways To Quiet Your Anxiety." BuzzFeed. N.p., 19 Mar. 2015. Web. 8 Aug. 2016.<br>
+</br>
+</p>
+</div>
+    
+  </div>
+  </div>
+  <div class="w3-row">
+
+    <div class="w3-twothird w3-container">
+
+    </div>
+
+ </div>
+
+
+  <footer id="myFooter">
+
+
+
+    <div class="w3-container w3-theme-l1">
+
+      <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+    </div>
+
+  </footer>
+
+
+<!-- END MAIN -->
+</div>
+<script>
+
+// Get the Sidenav
+
+var mySidenav = document.getElementById("mySidenav");
+
+
+// Get the DIV with overlay effect
+
+var overlayBg = document.getElementById("myOverlay");
+
+
+// Toggle between showing and hiding the sidenav, and add overlay effect
+
+function w3_open() {
+
+    if (mySidenav.style.display === 'block') {
+
+        mySidenav.style.display = 'none';
+
+        overlayBg.style.display = "none";
+
+    } else {
+
+        mySidenav.style.display = 'block';
+
+        overlayBg.style.display = "block";
+
+    }
+
+}
+
+
+// Close the sidenav with the close button
+
+function w3_close() {
+
+    mySidenav.style.display = "none";
+
+    overlayBg.style.display = "none";
+
+}
+
+</script>
+<script>
+
+/* When the user clicks on the button,
+
+toggle between hiding and showing the dropdown content */
+
+function myFunction() {
+
+    document.getElementById("myDropdown").classList.toggle("show");
+
+}
+
+
+
+
+// Close the dropdown if the user clicks outside of it
+
+window.onclick = function(e) {
+
+  if (!e.target.matches('.dropbtn')) {
+
+
+
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+
+    for (var d = 0; d < dropdowns.length; d++) {
+
+      var openDropdown = dropdowns[d];
+
+      if (openDropdown.classList.contains('show')) {
+
+        openDropdown.classList.remove('show');
+
+      }
+
+    }
+
+  }
+
+}
+
+</script>
+
+</body>
+
+</html>
